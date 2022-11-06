@@ -52,7 +52,7 @@ public class MyAbstractImpl extends MyAbstract {
     }
 }
 ```
-__1. Interface:__ 
+__2. Interface:__ 
 This is another way of implimenting abstraction but by using interface we can get multi level abstraction while from abstract class we can get only single level abstraction
 __Abstract Classes V/S Interfaces__
 * Abstract classes are similar to interfaces. 
