@@ -60,6 +60,8 @@ __Abstract Classes V/S Interfaces__
 * However, with abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods. 
 * With interfaces, all fields are automatically public, static, and final, and all methods that you declare or define (as default methods) are public.
 * In addition, you can extend only one class, whether or not it is abstract, whereas you can implement any number of interfaces.
+* Abstract class can implement interface while interface cam not extends or implement abstract class.
+* Abstract class not abstract 100% while interfaces are provides 100% abstractions as they only have abstract methods.
 ```
 interface Bicycle {
 
