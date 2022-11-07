@@ -6,6 +6,8 @@
 4. Polymorphism
 5. Abstraction
 6. Encapsulation
+__1. Object:__ An object is an instance of a class. which has properties and behavious.
+__2. Class:__ A class is a template or blueprint from which objects are created. So, an object is the instance(result) of a class.
 
 __3. Inheritance:__ A class that is derived from another class is called a subclass (also a derived class, extended class, or child class). The class from which the subclass is derived is called a superclass (also a base class or a parent class).
 
@@ -32,6 +34,7 @@ __Note:__ But Java doesn’t support the Operator Overloading.
 
 * __Method Overloading:__ When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by change in the number of arguments or/and a change in the type of arguments.
 __Eg:__
+```
 class Helper {
 
     // Method with 2 integer parameters
@@ -49,12 +52,13 @@ class Helper {
         return a * b;
     }
 }
+```
 __Runtime Polymorphism:__
 It is also known as Dynamic Method Dispatch. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding.
 *__Method overriding:__ on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
 __Eg:__
+```
 // Java Program for Method Overriding
-
 // Class 1
 // Helper class
 class Parent {
@@ -67,7 +71,8 @@ class Parent {
 		System.out.println("parent class");
 	}
 }
-
+```
+```
 // Class 2
 // Helper class
 class subclass1 extends Parent {
@@ -77,7 +82,8 @@ class subclass1 extends Parent {
     super.Print();
     System.out.println("subclass1"); }
 }
-
+```
+```
 // Class 3
 // Helper class
 class subclass2 extends Parent {
@@ -90,7 +96,8 @@ class subclass2 extends Parent {
 		System.out.println("subclass2");
 	}
 }
-
+```
+```
 // Class 4
 // Main class
 class GFG {
@@ -112,12 +119,13 @@ class GFG {
 		a.Print();
 	}
 }
-
+```
+```
 __Output:__
 parent class
 subclass1
 subclass2
-
+```
 
 __5. Abstraction:__ Data abstraction is the process of hiding certain details and showing only essential information to the user. Abstraction can be achieved by abstract class or interfaces.
 
@@ -184,5 +192,6 @@ interface Bicycle {
     void applyBrakes(int decrement);
 }
 ```
-
+__6. Encapsulation:__ Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. 
+Eg: Class which encapsulate object properites and behaviours.
 
