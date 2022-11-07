@@ -9,7 +9,114 @@
 
 __3. Inheritance:__ A class that is derived from another class is called a subclass (also a derived class, extended class, or child class). The class from which the subclass is derived is called a superclass (also a base class or a parent class).
 
-__4. Polymorphism:__
+__What You Can Do in a Subclass__
+* A subclass inherits all of the public and protected members of its parent, no matter what package the subclass is in. 
+* If the subclass is in the same package as its parent, it also inherits the package-private members of the parent. You can use the inherited members as is, replace them, hide them, or supplement them with new members:
+* The inherited fields can be used directly, just like any other fields.
+* You can declare a field in the subclass with the same name as the one in the superclass, in that case super clsass field hides.
+* You can declare new fields in the subclass that are not in the superclass.
+* The inherited methods can be used directly as they are.
+* You can write a new instance method in the subclass that has the same signature as the one in the superclass, thus overriding it.
+* You can write a new static method in the subclass that has the same signature as the one in the superclass, thus hiding it.
+* You can declare new methods in the subclass that are not in the superclass.
+* You can write a subclass constructor that invokes the constructor of the superclass, either implicitly or by using the keyword super.
+* If sub class object pass to super class variable then only super class things can be access.
+
+__4. Polymorphism:__Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance
+In Java polymorphism is mainly divided into two types: 
+1. Compile-time/Static Polymorphism
+2. Runtime Polymorphism
+
+__Compile-time Polymorphism:__It is also known as static polymorphism. This type of polymorphism is achieved by function overloading or operator overloading. 
+__Note:__ But Java doesn’t support the Operator Overloading.
+
+* __Method Overloading:__ When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by change in the number of arguments or/and a change in the type of arguments.
+__Eg:__
+class Helper {
+
+    // Method with 2 integer parameters
+    static int Multiply(int a, int b)
+    { 
+        // Returns product of integer numbers
+        return a * b;
+    }
+ 
+    // Method 2
+    // With same name but with 2 double parameters
+    static double Multiply(double a, double b)
+    { 
+        // Returns product of double numbers
+        return a * b;
+    }
+}
+__Runtime Polymorphism:__
+It is also known as Dynamic Method Dispatch. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding.
+*__Method overriding:__ on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
+__Eg:__
+// Java Program for Method Overriding
+
+// Class 1
+// Helper class
+class Parent {
+
+	// Method of parent class
+	void Print()
+	{
+
+		// Print statement
+		System.out.println("parent class");
+	}
+}
+
+// Class 2
+// Helper class
+class subclass1 extends Parent {
+
+	// Method
+	void Print() {
+    super.Print();
+    System.out.println("subclass1"); }
+}
+
+// Class 3
+// Helper class
+class subclass2 extends Parent {
+
+	// Method
+	void Print()
+	{
+
+		// Print statement
+		System.out.println("subclass2");
+	}
+}
+
+// Class 4
+// Main class
+class GFG {
+
+	// Main driver method
+	public static void main(String[] args)
+	{
+
+		// Creating object of class 1
+		Parent a;
+
+		// Now we will be calling print methods
+		// inside main() method
+
+		a = new subclass1();
+		a.Print();
+
+		a = new subclass2();
+		a.Print();
+	}
+}
+
+__Output:__
+parent class
+subclass1
+subclass2
 
 
 __5. Abstraction:__ Data abstraction is the process of hiding certain details and showing only essential information to the user. Abstraction can be achieved by abstract class or interfaces.
