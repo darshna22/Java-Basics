@@ -7,7 +7,9 @@
 5. Abstraction
 6. Encapsulation
 
-__4. Polymorphism__
+__3. Inheritance:__ A class that is derived from another class is called a subclass (also a derived class, extended class, or child class). The class from which the subclass is derived is called a superclass (also a base class or a parent class).
+
+__4. Polymorphism:__
 
 
 __5. Abstraction:__ Data abstraction is the process of hiding certain details and showing only essential information to the user. Abstraction can be achieved by abstract class or interfaces.
