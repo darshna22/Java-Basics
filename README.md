@@ -6,7 +6,9 @@
 4. Polymorphism
 5. Abstraction
 6. Encapsulation
+
 __1. Object:__ An object is an instance of a class. which has properties and behavious.
+
 __2. Class:__ A class is a template or blueprint from which objects are created. So, an object is the instance(result) of a class.
 
 __3. Inheritance:__ A class that is derived from another class is called a subclass (also a derived class, extended class, or child class). The class from which the subclass is derived is called a superclass (also a base class or a parent class).
@@ -24,12 +26,12 @@ __What You Can Do in a Subclass__
 * You can write a subclass constructor that invokes the constructor of the superclass, either implicitly or by using the keyword super.
 * If sub class object pass to super class variable then only super class things can be access.
 
-__4. Polymorphism:__Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance
+__4. Polymorphism:__ Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance
 In Java polymorphism is mainly divided into two types: 
 1. Compile-time/Static Polymorphism
 2. Runtime Polymorphism
 
-__Compile-time Polymorphism:__It is also known as static polymorphism. This type of polymorphism is achieved by function overloading or operator overloading. 
+__Compile-time Polymorphism:__ It is also known as static polymorphism. This type of polymorphism is achieved by function overloading or operator overloading. 
 __Note:__ But Java doesn’t support the Operator Overloading.
 
 * __Method Overloading:__ When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by change in the number of arguments or/and a change in the type of arguments.
